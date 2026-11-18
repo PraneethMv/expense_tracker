@@ -1,0 +1,48 @@
+name: Backend (tests + Supabase deploy)
+
+on:
+  push:
+    branches: [main]
+    paths: ["supabase/**", "tests/**", ".github/workflows/backend.yml"]
+  pull_request:
+    paths: ["supabase/**", "tests/**"]
+  workflow_dispatch:
+
+env:
+  SUPABASE_PROJECT_REF: rhlznzwgtvwomjgteqsa
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: SMS parser tests
+        run: node --test tests/*.test.ts
+
+  deploy:
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check secrets
+        run: |
+          if [ -z "$SUPABASE_ACCESS_TOKEN" ] || [ -z "$SUPABASE_DB_PASSWORD" ]; then
+            echo "::error::Add SUPABASE_ACCESS_TOKEN and SUPABASE_DB_PASSWORD under Settings > Secrets and variables > Actions"
+            exit 1
+          fi
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Link project
+        run: supabase link --project-ref "$SUPABASE_PROJECT_REF" --password "$SUPABASE_DB_PASSWORD"
+      - name: Apply database migrations
+        run: supabase db push --password "$SUPABASE_DB_PASSWORD"
+      - name: Deploy edge functions
+        run: supabase functions deploy ingest-sms --project-ref "$SUPABASE_PROJECT_REF" --no-verify-jwt

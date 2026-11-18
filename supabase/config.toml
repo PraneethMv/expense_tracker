@@ -1,0 +1,5 @@
+project_id = "expense_tracker"
+
+[functions.ingest-sms]
+# The function checks the caller's session itself (auth.getUser), so gateway JWT checks are off.
+verify_jwt = false

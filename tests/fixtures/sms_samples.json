@@ -1,0 +1,244 @@
+[
+ {
+  "source": "Scapia/Federal Bank",
+  "body": "Hi! Your txn of ₹100.00 at Spoorthi Soda Hub on your Scapia Federal RuPay credit card was successful. Not you? Go to Scapia support on the app.- Federal Bank",
+  "expect": {
+   "kind": "debit",
+   "amount": "100.00",
+   "instrument_id": "scapia-rupay",
+   "merchant": "Spoorthi Soda Hub",
+   "txn_time_ist": null
+  }
+ },
+ {
+  "source": "Scapia/Federal Bank",
+  "body": "Hi! Your txn of ₹210.00 at Mr Test Vendor on your Scapia Federal RuPay credit card was successful. Not you? Go to Scapia support on the app.- Federal Bank",
+  "expect": {
+   "kind": "debit",
+   "amount": "210.00",
+   "instrument_id": "scapia-rupay",
+   "merchant": "Mr Test Vendor",
+   "txn_time_ist": null
+  }
+ },
+ {
+  "source": "Scapia/Federal Bank",
+  "body": "Your txn of ₹2,400.00 at Ramesh Kumar on your Scapia Federal RuPay credit card earned you 5% rewards! Not you? Call 18002961199. - Federal Bank",
+  "expect": {
+   "kind": "debit",
+   "amount": "2400.00",
+   "instrument_id": "scapia-rupay",
+   "merchant": "Ramesh Kumar",
+   "txn_time_ist": null
+  }
+ },
+ {
+  "source": "Scapia/Federal Bank",
+  "body": "Your txn of ₹979.00 at Raz*sample Store Raipur on your Scapia Federal Visa credit card earned you 10% rewards! Not you? Call 18002961199. - Federal Bank",
+  "expect": {
+   "kind": "debit",
+   "amount": "979.00",
+   "instrument_id": "scapia-visa",
+   "merchant": "sample Store Raipur",
+   "txn_time_ist": null
+  }
+ },
+ {
+  "source": "Yes Bank Savings",
+  "body": "YES BANK Ac X7777 debited for INR 1,100.00 on 07NOV26 12:49. UPI:111111111111/To:qXXXXX9999@ybl. Bal INR 12,345.67. Not U? SMS BLKMB <CustID> to <num>",
+  "expect": {
+   "kind": "debit",
+   "amount": "1100.00",
+   "instrument_id": "yes-savings",
+   "merchant": "qxxxxx9999@ybl",
+   "txn_time_ist": "2026-11-07T12:49:00+05:30"
+  }
+ },
+ {
+  "source": "Yes Bank Savings",
+  "body": "YES BANK Ac X7777 debited for INR 40.00 on 05NOV26 11:10. UPI:222222222222/To:testuser@okhdfcbank. Bal INR 23,456.78. Not U? SMS BLKMB <CustID> to <num>",
+  "expect": {
+   "kind": "debit",
+   "amount": "40.00",
+   "instrument_id": "yes-savings",
+   "merchant": "testuser@okhdfcbank",
+   "txn_time_ist": "2026-11-05T11:10:00+05:30"
+  }
+ },
+ {
+  "source": "Yes Bank Savings",
+  "body": "YES BANK Ac X7777 debited for INR 8.00 on 01NOV26 23:23. UPI:333333333333/To:paytm.abc1234@pty. Bal INR 34,567.89. Not U? SMS BLKMB <CustID> to <num>",
+  "expect": {
+   "kind": "debit",
+   "amount": "8.00",
+   "instrument_id": "yes-savings",
+   "merchant": "paytm.abc1234@pty",
+   "txn_time_ist": "2026-11-01T23:23:00+05:30"
+  }
+ },
+ {
+  "source": "Axis MyZone",
+  "body": "Spent INR 80\nAxis Bank Card no. XX4444\n02-07-26 21:03:44 IST\nMAHALAXMI E\nAvl Limit: INR 50000.5\nNot you? SMS BLOCK 4444 to 919951860002",
+  "expect": {
+   "kind": "debit",
+   "amount": "80",
+   "instrument_id": "axis-myzone",
+   "merchant": "MAHALAXMI E",
+   "txn_time_ist": "2026-07-02T21:03:44+05:30"
+  }
+ },
+ {
+  "source": "Axis MyZone",
+  "body": "Spent INR 20\nAxis Bank Card no. XX4444\n02-07-26 21:26:17 IST\nPRIYATAM ST\nAvl Limit: INR 49980.5\nNot you? SMS BLOCK 4444 to 919951860002",
+  "expect": {
+   "kind": "debit",
+   "amount": "20",
+   "instrument_id": "axis-myzone",
+   "merchant": "PRIYATAM ST",
+   "txn_time_ist": "2026-07-02T21:26:17+05:30"
+  }
+ },
+ {
+  "source": "Axis Airtel",
+  "body": "Spent INR 279 \nusing Axis Bank Credit Card no. XX3333 on 18-10-26 04:07:27 IST at \nGOOGLEPLAY. \nAvl limit: INR 60000.10. Not you? SMS BLOCK 3333 to +919951860002.",
+  "expect": {
+   "kind": "debit",
+   "amount": "279",
+   "instrument_id": "axis-airtel",
+   "merchant": "GOOGLEPLAY",
+   "txn_time_ist": "2026-10-18T04:07:27+05:30"
+  }
+ },
+ {
+  "source": "Axis Airtel",
+  "body": "Spent INR 3250\nAxis Bank Card no. XX3333\n14-10-26 09:32:34 IST\nZEPTO MARKE\nAvl Limit: INR 63250.10\nNot you? SMS BLOCK 3333 to 919951860002",
+  "expect": {
+   "kind": "debit",
+   "amount": "3250",
+   "instrument_id": "axis-airtel",
+   "merchant": "ZEPTO MARKE",
+   "txn_time_ist": "2026-10-14T09:32:34+05:30"
+  }
+ },
+ {
+  "source": "Axis Airtel",
+  "body": "Spent INR 279\nAxis Bank Card no. XX3333\n11-10-26 03:50:17 IST\nGOOGLEPLAY\nAvl Limit: INR 66500.10\nNot you? SMS BLOCK 3333 to 919951860002",
+  "expect": {
+   "kind": "debit",
+   "amount": "279",
+   "instrument_id": "axis-airtel",
+   "merchant": "GOOGLEPLAY",
+   "txn_time_ist": "2026-10-11T03:50:17+05:30"
+  }
+ },
+ {
+  "source": "HSBC",
+  "body": "Your YOUTUBE Merchant payment e-mandate MIN – TESTMANDATE1 for Rs 299 is due on 30/9/2026 and will be processed through HSBC card ending with 6666.\nTo cancel this debit or your e-mandate (MIN - TESTMANDATE1),\nplease login to https://www.hsbc.co.in/credit-cards/e-mandates",
+  "expect": {
+   "kind": "mandate_notice",
+   "amount": "299",
+   "instrument_id": "hsbc-cc",
+   "merchant": "YOUTUBE",
+   "txn_time_ist": null
+  }
+ },
+ {
+  "source": "HDFC",
+  "body": "Spent Rs.295 On HDFC Bank Card 1111 At Swiggy Food On 2026-09-30:22:24:08.Not You? To Block+Reissue Call 18002586161/SMS BLOCK CC 1111 to 7308080808",
+  "expect": {
+   "kind": "debit",
+   "amount": "295",
+   "instrument_id": "hdfc-cc",
+   "merchant": "Swiggy Food",
+   "txn_time_ist": "2026-09-30T22:24:08+05:30"
+  }
+ },
+ {
+  "source": "HDFC",
+  "body": "Spent Rs.1049 On HDFC Bank Card 1111 At ..SREE SIRI PHARMA_ On 2026-09-20:13:17:19.Not You? To Block+Reissue Call 18002586161/SMS BLOCK CC 1111 to 7308080808",
+  "expect": {
+   "kind": "debit",
+   "amount": "1049",
+   "instrument_id": "hdfc-cc",
+   "merchant": "SREE SIRI PHARMA",
+   "txn_time_ist": "2026-09-20T13:17:19+05:30"
+  }
+ },
+ {
+  "source": "HDFC",
+  "body": "Spent Rs.245 On HDFC Bank Card 1111 At PYU*Instamart Grocery On 2026-09-17:22:25:15.Not You? To Block+Reissue Call 18002586161/SMS BLOCK CC 1111 to 7308080808",
+  "expect": {
+   "kind": "debit",
+   "amount": "245",
+   "instrument_id": "hdfc-cc",
+   "merchant": "Instamart Grocery",
+   "txn_time_ist": "2026-09-17T22:25:15+05:30"
+  }
+ },
+ {
+  "source": "HDFC",
+  "body": "Spent Rs.243 On HDFC Bank Card 2222 At Swiggy On 2026-11-02:18:26:08.Not You? To Block+Reissue Call 18002586161/SMS BLOCK CC 2222 to 7308080808",
+  "expect": {
+   "kind": "debit",
+   "amount": "243",
+   "instrument_id": "hdfc-cc",
+   "merchant": "Swiggy",
+   "txn_time_ist": "2026-11-02T18:26:08+05:30"
+  }
+ },
+ {
+  "source": "ICICI",
+  "body": "INR 173.00 spent using ICICI Bank Card XX5555 on 02-Nov-26 on AMAZON PAY IN G. Avl Limit: INR 1,00,000.00. If not you, call 1800 2662/SMS BLOCK 5555 to 9215676766.",
+  "expect": {
+   "kind": "debit",
+   "amount": "173.00",
+   "instrument_id": "icici-amazon",
+   "merchant": "AMAZON PAY IN G",
+   "txn_time_ist": "2026-11-02T00:00:00+05:30"
+  }
+ },
+ {
+  "source": "ICICI",
+  "body": "INR 499.00 spent using ICICI Bank Card XX5555 on 22-Apr-26 on CAS*The Wink La. Avl Limit: INR 90,000.00. If not you, call 1800 2662/SMS BLOCK 5555 to 9215676766.",
+  "expect": {
+   "kind": "debit",
+   "amount": "499.00",
+   "instrument_id": "icici-amazon",
+   "merchant": "The Wink La",
+   "txn_time_ist": "2026-04-22T00:00:00+05:30"
+  }
+ },
+ {
+  "source": "ICICI",
+  "body": "INR 2,253.00 spent using ICICI Bank Card XX5555 on 03-Apr-26 on AMAZON PAY IN E. Avl Limit: INR 80,000.00. If not you, call 1800 2662/SMS BLOCK 5555 to 9215676766.",
+  "expect": {
+   "kind": "debit",
+   "amount": "2253.00",
+   "instrument_id": "icici-amazon",
+   "merchant": "AMAZON PAY IN E",
+   "txn_time_ist": "2026-04-03T00:00:00+05:30"
+  }
+ },
+ {
+  "source": "Other",
+  "body": "INR 20 toll paid from IDFC FIRST Bank Tag 3XXXA123 for vehicle no. XX00XX0000 at Test Plaza on 30/10/2026 09:36. Avbl. Bal.: INR195.00.",
+  "expect": {
+   "kind": "wallet_debit",
+   "amount": "20",
+   "instrument_id": "idfc-fastag",
+   "merchant": "Test Plaza",
+   "txn_time_ist": "2026-10-30T09:36:00+05:30"
+  }
+ },
+ {
+  "source": "Other",
+  "body": "INR 70 toll paid from IDFC FIRST Bank Tag 3XXXA123 for vehicle no. XX00XX0000 at Sample  Toll Plaza on 29/12/2025 20:23. Avbl. Bal.: INR150.00.",
+  "expect": {
+   "kind": "wallet_debit",
+   "amount": "70",
+   "instrument_id": "idfc-fastag",
+   "merchant": "Sample Toll Plaza",
+   "txn_time_ist": "2025-12-29T20:23:00+05:30"
+  }
+ }
+]
